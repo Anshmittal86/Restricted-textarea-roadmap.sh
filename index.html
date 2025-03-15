@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta tags for seo  -->
+  <meta name="title" content="Restricted Textarea">
+  <meta name="author" content="Ansh Mittal">
+  <meta name="description" content="Restricted Textarea, where we can type the text and text count shows in real time if user cross the limit of 250 then he can't input any more.">
+  <meta name="keywords" content="Restricted Textarea, restricted-textarea, textarea">
+
+  <!-- css  -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Restricted Textarea</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <label for="message">Write your Message</label>
+    <textarea name="message" id="message" maxlength="250" placeholder="Start typing..." aria-describedby="charCount"></textarea>
+    <p id="charCount" aria-live="polite">0 / 250</p>
+    <p id="errorMsg" class="sr-only" aria-live="assertive"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
